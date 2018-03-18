@@ -1,14 +1,21 @@
-var dog = {
-    name:"Fido",
-    breed:"Mixed",
-    weight:38
-};
+// var dog = {
+//     name:"Fido",
+//     breed:"Mixed",
+//     weight:38
+// };
 
 
 function Dog(name,breed, weight){
     this.name=name;
     this.breed=breed;
     this.weight=weight;
+    this.bark=function(){
+        if(this.weight>10){
+            alert(this.name+" says Woof!");
+        }else{
+            alert(this.name+" says Yip!");
+        }
+    }
 }
 
 
@@ -24,4 +31,8 @@ for (var i=0;i<dogs.length;i++){
 
     }
     console.log("Dog:"+dogs[i].name+" breed:"+dogs[i].breed+" weight:"+dogs[i].weight+" size:"+size);
+}
+
+for(var i=0; i<dogs.length; i++){
+    dogs[i].bark();
 }
