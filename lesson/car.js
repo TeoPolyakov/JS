@@ -1,8 +1,8 @@
-// var dog = {
-//     name:"Fido",
-//     breed:"Mixed",
-//     weight:38
-// };
+var dog = {
+    name:"Fido",
+    breed:"Mixed",
+    weight:38
+};
 
 
 function Dog(name,breed, weight){
